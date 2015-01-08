@@ -19,7 +19,12 @@
   
   <% if (start_time == '00:00 am' && end_time == '00:00 am') { %>
     <span class="start_time" title="<?php echo t('Opening time'); ?>"><?php echo t('24 hours'); ?></span>
- <% } else { %>
+	
+	
+<% } else if (start_time == '12:00 am' && end_time == '02:00 am') { %>
+    <span class="start_time" title="<?php echo t('Opening time'); ?>"><?php echo t('12:00 pm - 02:00 am'); ?></span>
+
+<% } else { %>
     <span class="start_time" title="<?php echo t('Opening time'); ?>"><%= start_time %></span> –
     <span class="end_time" title="<?php echo t('Closing time'); ?>"><%= end_time %> </span>
 <% } %>
