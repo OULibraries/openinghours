@@ -1,2 +1,12 @@
-# openinghours
-This is our fork of the Drupal Opening Hours module with some OU specific customizations. You probably want to grab the upstream module from D.O.
+Opening hours module for Drupal
+===============================
+
+This module is intended to make it fairly easy to manage opening hours
+for a large number of locations.
+
+Built for the [Ding.TING][] project, and funded by [Copenhagen Public
+Libraries][KKB].
+
+[Ding.TING]: http://ting.dk/
+[KKB]: http://bibliotek.kk.dk/node/272
+
