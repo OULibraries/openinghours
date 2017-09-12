@@ -205,7 +205,7 @@
             $(this).hide();
           });
 
-          if (notices) {
+          if (notices) { console.log(notices);
             // Replace the notice with a star, and add a class for
             // styling that.
             $('<span class="notice-star">')
@@ -216,6 +216,7 @@
             $instance.attr('title', notices.join(' – ')).tipsy({
               fade: true
             });
+              $('.notice').show();
           }
         });
 
