@@ -18,5 +18,8 @@ if (!empty($preface)) {
     <a class="next" href="#next">&rsaquo;</a>
   </div>
   <div class="days"></div>
+    <?php if ($node->nid == '1304') {?>
+        <div class="hours-link"><a href="locations">Hours for other libraries</a></div>
+    <?php } ?>
 </div>
 
