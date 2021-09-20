@@ -373,7 +373,16 @@ function opening_hours_format_time($time) {
 	  $int_hr = $int_hr - 12;
 	  $ampm = ' pm';
 	}
-	
+
+  if ($int_hr == 12) {
+    $ampm = ' pm';
+  }
+
+  if ($int_hr == 0) {
+    $int_hr = 12;
+    $ampm = ' am';
+  }
+
 	$str_hr = strval($int_hr);
 	$len_hr = strlen($str_hr);
 	
